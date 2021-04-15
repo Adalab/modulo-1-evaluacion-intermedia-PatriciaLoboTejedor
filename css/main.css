@@ -25,7 +25,6 @@
   align-items: center;
   padding-bottom: 13px;
 }
-
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -33,6 +32,7 @@
     padding: 20px 30px 20px 30px;
   }
 }
+
 .img-logo {
   width: 155px;
   padding: 10px;
@@ -57,7 +57,7 @@
 }
 
 .main {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: var(--color-bg);
   display: flex;
@@ -70,6 +70,7 @@
   font-family: var(--font-family);
   text-align: center;
   font-size: 30px;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .tittle {
