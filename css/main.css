@@ -3,13 +3,16 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Rubik", sans-serif;
 }
 
 :root {
   --color-bg: #3cdbc0;
   --color-tittle: #ffffff;
   --color-text-menu: #4a4a4a;
-  --font-family: "Rubik", sans-serif;
   --font-size-menu: 16px;
 }
 
@@ -24,36 +27,43 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 13px;
+  padding-top: 10px;
 }
 @media (min-width: 768px) {
   .header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 20px 20px 30px;
   }
 }
 
 .img-logo {
   width: 155px;
-  padding: 10px;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .menu {
+    padding-top: 0px;
+  }
 }
 
 .blog {
-  font-family: var(--font-family);
   color: var(--color-text-menu);
   font-size: var(--font-size-menu);
-  padding-right: 20px;
+  padding: 10px 10px 13px 10px;
+  text-transform: uppercase;
 }
 
 .contact {
-  font-family: var(--font-family);
   color: var(--color-text-menu);
   font-size: var(--font-size-menu);
+  text-transform: uppercase;
+  padding: 10px 10px 13px 10px;
 }
 
 .main {
@@ -63,11 +73,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
+  word-spacing: 100vw;
 }
 
 .tittle {
   color: var(--color-tittle);
-  font-family: var(--font-family);
   text-align: center;
   font-size: 30px;
   font-weight: bold;
